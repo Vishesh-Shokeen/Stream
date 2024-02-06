@@ -1,0 +1,74 @@
+:root{
+  --black-800:#000000;
+  --black-500:rgb(41, 41, 41);
+
+  --white-800:#ffffff;
+  --white-500:#e4e4e4;
+  --acc:rgb(223, 6, 6);
+}
+
+
+*{margin: 0;padding: 0;}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+img,video{
+  display: block;
+  width: 100%;
+}
+
+html,
+body{
+  min-height: 100vh;
+}
+
+/*********************/
+body{
+  background-color: var(--black-800);
+  color: var(--white-800);
+  font-size: 16px;
+}
+
+
+input,button{
+  all: unset;
+  padding-block:.8rem;
+  padding-inline: 1.6rem;
+  border: 1px solid ;
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+button{
+  text-align: center;
+  padding-block:.6rem;
+  background-color: var(--acc);
+  color: var(--white-800);
+}
+
+button:hover{
+color: var(--acc);
+background-color: var(--white-800);
+}
+
+
+dialog{
+  width: min(100% , 600px);
+  margin: auto;
+  border-radius: 10px;
+}
+dialog > div{
+  padding: .8rem;
+  display: grid;
+  gap: 1rem;
+}
+
+
+/**********
+Attrributes
+**********/
+#navBar[show ='true']{
+  transform: translateX(0);
+}
